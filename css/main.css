@@ -1,0 +1,39 @@
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 12px;
+    background-color: #bdbdbd;
+    cursor: pointer;
+    border-radius: 37%;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.todo-list {
+    background-color: lightgray;
+    padding: 10px;
+    list-style: none;
+}
+
+.filter-container {
+    background-color: antiquewhite;
+    padding: 10px;
+}
+
+.done {
+    text-decoration: line-through
+}
+
+.stat span {
+    color: orange;
+}
+
+.upDown-btns {
+    display: inline-block;
+}
+
+.hide {
+    display: none;
+}

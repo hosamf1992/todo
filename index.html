@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="init()">
+    <h1>MVC</h1>
+
+    <div class="filter-container">
+        Filter By:
+
+        <button class="btn" value="All" onclick="onSetFilter(this.value)">ALL</button>
+        <button class="btn" value="Active" onclick="onSetFilter(this.value)">Active</button>
+        <button class="btn" value="Done" onclick="onSetFilter(this.value)">Done</button>
+
+        <!-- <select onchange="onSetFilter(this.value)">
+            <option>All</option>
+            <option>Active</option>
+            <option>Done</option>
+        </select> -->
+    </div>
+    <div class="filter-container">
+        Sort By:
+        <button class="btn" value="Txt" onclick="onSortFilter(this.value)">Txt</button>
+        <button class="btn" value="Created" onclick="onSortFilter(this.value)">Created</button>
+        <button class="btn" value="Importance" onclick="onSortFilter(this.value)">Importance</button>
+
+        <!-- <select onchange="onSortFilter(this.value)">
+            <option>Txt</option>
+            <option>Created</option>
+            <option>Importance</option>
+        </select>
+    </div> -->
+        <ul class="todo-list"></ul>
+        <span class="status-msg"></span>
+        <p class="stat">
+            Total todos:
+            <span class="total-count"></span>
+            Active:
+            <span class="active-count"></span>
+        </p>
+        <input class="input-txt" type="text" placeholder="What needs to be done?" />
+        <input class="importance-txt" type="text" placeholder="Enter importance (1-3) " />
+        <button onclick="onAddTodo()">Add</button>
+        </br>
+        <span class="valid-msg"></span>
+        <script src="js/todo-service.js"></script>
+        <script src="js/todo-controller.js"></script>
+</body>
+
+</html>
